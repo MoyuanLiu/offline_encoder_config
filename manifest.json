@@ -1,0 +1,45 @@
+{
+  "name": "规则编码器",
+  "description": "设置编码规则，根据规则编码",
+  "version": "1.0",
+  "manifest_version": 2,
+  "options_page": "html/config.html",
+  "permissions":
+    [
+      "tabs",
+      "activeTab",
+      "notifications",
+      "webRequest"
+    ],
+    "background": 
+  {
+    "scripts":["js/background.js"]
+  },
+  "icons": {
+    "16": "icon/icon.png"
+},
+"browser_action": 
+  {
+    "default_icon" : "icon/icon.png",
+    "default_title": "编码"
+  },
+
+"content_scripts": [
+  {
+    "matches": ["<all_urls>"],
+    "js": ["js/content.js","js/jquery-1.11.3.min.js"],
+    "css": ["css/content.css"]
+  }
+
+],
+"web_accessible_resources": [
+    "html/bar.html",
+    "js/content.js",
+    "js/jquery-1.11.3.min.js",
+    "js/bar.js"
+  ]
+}
+
+
+
+

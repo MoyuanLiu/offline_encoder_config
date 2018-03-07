@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>设置选项</title>
+        <link rel="stylesheet" type="text/css" href="../css/config.css">
+		<script src="../js/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+
+    	<div class="nav"><img src="../icon/icon.PNG" height="56px"><span>规则编码解码器</span></div>
+
+    	<div class="setting container">
+    	<h4>用户设置</h4>
+    	<div class="setting_box">
+    		<div class="setting_line">
+    			<label>用户名: </label>
+				<input type="text" id="txt_username" placeholder='用户名' width="200px" height="30px" />
+				<input type="button" value="保存用户名" id="btn_saveusername" class="fl-r"/>
+    		</div>
+    	</div>	
+		<br />
+		<h4>模板设置</h4>
+		<div class="setting_box">
+		<div class="setting_line">
+			<label>模板操作：</label>
+			<input type="button" value="导入模板" id="btn_importtemplate" class="fl-r"/>
+			<input type="button" value="导出模板" id="btn_exporttemplate" class="fl-r"/>
+			<input type="button" value="清空模板" id="btn_cleartemplate" class="fl-r"/>
+		</div>
+			<hr>
+			<div class="setting_line">
+				<label>规则操作：</label>
+				<input type="button" value="增加规则" id="btn_addfield" class="fl-r"/>
+				<input type="button" value="删除规则" id="btn_delfield" class="fl-r"/>
+			</div>
+			<hr>
+			<div class="setting_line">
+				<label>当前模板：</label>
+			</div>
+			<hr>
+		<div>
+			<table id="tab_template">
+				<tr>
+					<td>ID</td><td>规则名称</td><td>规则显示名称</td><td>规则显示类型</td><td>规则内容</td>
+				</tr>
+			</table>
+		</div>
+			<hr>
+			<div class="setting_line">
+				<label>保存设置：</label>
+				<input type="button" id="btn_save" value="保存所有模板" class="fl-r"/>
+			</div>
+		
+		</div>
+		
+		<br>
+		
+		
+    	</div>
+		
+		<script src="../js/config.js"></script>
+	
+
+    </body>
+</html>
